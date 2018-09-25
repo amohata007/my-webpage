@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Teamplate</title>
+    <link rel="stylesheet" type="text/css" href="new.css">
+    <link rel="stylesheet" type="text/js" href="new.js">
+    
+    </head>
+
+  <body>
+      
+ 
+  <div class="topnav" id="myTopnav">
+    <a href="#Home" class="active">Home</a>
+    <a href="#About">About</a>
+    <a href="#Gallery">Gallery</a>
+    <a href="#Contact">Contact</a>
+  </div>
+    <div id='Home'>
+        <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p>
+        
+      <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          
+          <img src="me2.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="me3.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="me.jpg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+      </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+    <!-- <img src="me.jpg" id="topimg" alt="me" width=100% height="730px"> 
+    <div class="centered">Hello this is akshita.</div> -->
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" activ", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " activ";
+          setTimeout(showSlides, 3000); 
+      }
+      </script>
+  
+  </div>
+  <div id='About'>
+ <h1>About</h1>
+ <table>
+  <tr>
+    <th>Skills</th>
+    <th>Hobbies</th>
+    <th>Education</th>
+  </tr>
+  <tr>
+    <td>Frontend developer</td>
+    <td>Reading Novels</td>
+    <td>Doing B.Tech</td>
+  </tr>
+  
+</table>
+
+
+
+
+ <!-- <p>ndgyei cheifyegb bfieutrifk buierufe euigrieuerh n Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        n Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+See alsoSee also</p> -->
+   </div>
+  <div id='Gallery'>
+ <h2>Gallery</h2>
+ <div id="image">
+ <img src="https://avatars3.githubusercontent.com/u/33191411?s=400&u=29b917370896950567b4d5206ff13de24948ff82&v=4" alt="git" width=33% height="342">
+ <img src="https://scontent.fjai3-1.fna.fbcdn.net/v/t1.0-1/c0.0.240.240/p240x240/15109388_1147811975331330_9161322366335066675_n.jpg?_nc_cat=0&oh=7715a3ac7c973454b704eaaf4962a49b&oe=5C02212A" alt="fb" width=33% height="342">
+ <img src="https://instagram.fjai3-1.fna.fbcdn.net/vp/93ff2567b312508a294ae116d7dae87e/5C32A6A0/t51.2885-19/s150x150/13715304_1759989820952533_1587756687_a.jpg" alt="insta"  width=33% height="342">
+
+ </div>
+
+ <p>jbdggef k,j.awqoqn v brkgiebg kriucwggwoigc n Informatics,n Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        See alson Informatics, dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        See also dummy data is benign information that does not contain any useful data, but serves to reserve space where real data is nominally present. Dummy data can be used as a placeholder for both testing and operational purposes. For testing, dummy data can also be used as stubs or pad to avoid software testing issues by ensuring that all variables and data fields are occupied. In operational use, dummy data may be transmitted for OPSEC purposes. Dummy data must be rigorously evaluated and documented to ensure that it does not cause unintended effects.
+
+        See alsor</p>
+
+        </div>
+
+    <div id='Contact'>    
+
+ <h3>Contact</h3>
+
+ <div class="dropdown">
+    <button class="dropbtn">Contact</button>
+    <div class="dropdown-content">
+      <a href="https://github.com/akshitavijay" target="blank">Contact 1</a>
+      <a href="https://www.facebook.com/akshita.vijay.3" target="blank">Contact 2</a>
+      <a href="https://www.instagram.com/akshitavijayv/?hl=en" target="blank">Contact 3</a>
+    </div>
+  </div>
+  </div>
+  <div id="form">
+    <p>For any further details contact</p>
+    <label for="Name">Name</label>
+    <input class="contact-box" type="text" value="" placeholder="Name">
+    <label for="Number">Contact Number</label>
+    <input class="contact-box" type="number" value="" placeholder="Phone No">
+    <label for="Email">Email</label>
+    <input class="contact-box" type="email" value="" placeholder="Email">
+    <label for="Message">Message</label>
+    <textarea rows="4" class= "contact-box" placeholder="Your Message Please"></textarea>
+    <input type="submit" value="Submit">
+  </div>
+
+    <footer>
+            <p id="foot">Designed by: Akshita Vijay Contact information: <a href="https://github.com/akshitavijay">Akshita Vijay</a></p>
+            
+          </footer>
+
+</body>
+</html>
